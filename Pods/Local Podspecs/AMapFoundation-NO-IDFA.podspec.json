@@ -32,5 +32,5 @@
   "source_files": "AMapFoundationKit.framework/**/*.{h}",
   "vendored_frameworks": "AMapFoundationKit.framework",
   "public_header_files": "AMapFoundationKit.framework/Headers/*.h",
-  "prepare_command": "mkdir AMapFoundation-NO-IDFA/AMapFoundationKit.framework/Modules\ntouch AMapFoundation-NO-IDFA/AMapFoundationKit.framework/Modules/module.modulemap\ncat <<-EOF > AMapFoundation-NO-IDFA/AMapFoundationKit.framework/Modules/module.modulemap\nframework module AMapFoundationKit {\n    header \"AMapFoundationVersion.h\"\n    header \"AMapServices.h\"\n    header \"AMapURLSearchConfig.h\"\n    header \"AMapURLSearchType.h\"\n    header \"AMapURLSearch.h\"\n    header \"AMapUtility.h\"\n    export *\n    link \"z\"\n}\nEOF"
+  "prepare_command": "mkdir AMapFoundationKit.framework/Modules\ntouch AMapFoundationKit.framework/Modules/module.modulemap\ncat <<-EOF > AMapFoundationKit.framework/Modules/module.modulemap\nframework module AMapFoundationKit {\n    header \"AMapFoundationVersion.h\"\n    header \"AMapServices.h\"\n    header \"AMapURLSearchConfig.h\"\n    header \"AMapURLSearchType.h\"\n    header \"AMapURLSearch.h\"\n    header \"AMapUtility.h\"\n    export *\n    link \"z\"\n}\nEOF"
 }

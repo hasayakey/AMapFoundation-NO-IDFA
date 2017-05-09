@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AMapFoundationKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

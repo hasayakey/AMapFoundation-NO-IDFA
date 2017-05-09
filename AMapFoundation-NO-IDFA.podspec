@@ -23,10 +23,11 @@ Pod::Spec.new do |s|
   s.public_header_files = "AMapFoundationKit.framework/Headers/*.h"
 
   s.prepare_command     = <<-EOF
-  mkdir AMapFoundation-NO-IDFA/AMapFoundationKit.framework/Modules
-  touch AMapFoundation-NO-IDFA/AMapFoundationKit.framework/Modules/module.modulemap
-  cat <<-EOF > AMapFoundation-NO-IDFA/AMapFoundationKit.framework/Modules/module.modulemap
+  mkdir AMapFoundationKit.framework/Modules
+  touch AMapFoundationKit.framework/Modules/module.modulemap
+  cat <<-EOF > AMapFoundationKit.framework/Modules/module.modulemap
   framework module AMapFoundationKit {
+      header "AMapFoundationKit.h"
       header "AMapFoundationVersion.h"
       header "AMapServices.h"
       header "AMapURLSearchConfig.h"
