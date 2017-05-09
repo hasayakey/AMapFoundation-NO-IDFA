@@ -3,15 +3,15 @@ Pod::Spec.new do |s|
   s.version           = '1.4.0'
   s.summary           = 'AMapFoundationKit for iOS.'
   s.description       = <<-DESC
-                        AMapSearch SDK for iOS by Autonavi.
-                       DESC
+                         AMapSearch SDK for iOS by Autonavi.
+                        DESC
   s.homepage          = 'http://lbs.amap.com/api/ios-sdk/summary/'
   s.license           = { :type => 'Copyright', :file => 'Copyright © 2014 AutoNavi. All Rights Reserved.\n' }
   s.author            = 'lbs.amap.com'
   s.social_media_url  = 'http://lbsbbs.amap.com/forum.php?mod=forumdisplay&fid=38'
   s.documentation_url = 'http://lbs.amap.com/api/ios-sdk/reference/'
   
-  s.ios.deployment_target = '7.0'
+  s.ios.deployment_target = '8.0'
 
   s.framework           = [ "SystemConfiguration", "CoreTelephony", "Security", "CoreLocation", "JavaScriptCore" ]
   s.libraries           = "z"
